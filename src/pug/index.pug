@@ -8,23 +8,9 @@ block meta
   //- link(rel="stylesheet", href="style.min.css")
 
 block page-header
-  +page-header("Админ")
-
-block side-nav
-  +side-nav(true)
-
-block extra-blocks
-  +extra-food()
-  +extra-places()
-
-block top-panel
-  +top-panel("Все купоны со скидками в одном месте", "Популярные категории", true, false, false)
-
-block append top-panel-edit
-  +top-panel-edit("Админ")
+  +page-header()
 
 block main-content
-  +main-content-index()
 
 //- block append page-bottom
   //- script(src='some.js')

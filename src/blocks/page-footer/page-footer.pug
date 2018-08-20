@@ -1,43 +1,5 @@
 mixin page-footer()
 
-  -
-    var footer_nav1 = {
-      'О проекте': '#',
-      'Вопросы и ответы': '#',
-      'Сотрудничество': '#'
-    };
-    var footer_nav2 = {
-      'Реклама на сайте': '#',
-      'Контакты': '#',
-      'Соцсети': '#'
-    };
-    var footer_nav3 = {
-      'Пользовательское соглашение': '#',
-      'Политика конфиденциальности': '#'
-    };
-
   footer.page-footer
     .page-footer__container
-      .page-footer__leftcol
-        .page-footer__logo
-          img.page-footer__logo-img(width="150" height="31" src="img/page-footer__logo-img.svg", alt="hot kupon")
-
-      nav.page-footer__nav
-        ul.page-footer__nav-list
-          each val, key in footer_nav1
-            li.page-footer__nav-item
-              a.page-footer__nav-link(href=val, title=key)= key
-
-        ul.page-footer__nav-list
-          each val, key in footer_nav2
-            li.page-footer__nav-item
-              a.page-footer__nav-link(href=val, title=key)= key
-
-        ul.page-footer__nav-list
-          each val, key in footer_nav3
-            li.page-footer__nav-item
-              a.page-footer__nav-link(href=val, title=key)= key
-
-    .page-footer__copy
-      p.page-footer__copy-text
-        | &copy; HotKupon.ru <br>Все сайты скидок
+      

@@ -1,35 +1,3 @@
 .main-nav {
-  display: flex;
-  align-items: center;
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-  }
-
-  &__item {
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-left: 10px;
-    display: flex;
-  }
-
-  &__link {
-    color: #787878;
-    display: inline-block;
-  }
-
-  &__sale-icon {
-    width: 26px;
-    height: 26px;
-    margin-right: 10px;
-    fill: #FF0101;
-  }
-
-  &__places-icon {
-    width: 27px;
-    height: 26px;
-    margin-right: 10px;
-  }
 }

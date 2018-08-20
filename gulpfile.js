@@ -41,6 +41,12 @@ const wait = require('gulp-wait');
 const htmlbeautify = require('gulp-html-beautify');
 const svgInline = require('postcss-inline-svg');
 const svgo = require('postcss-svgo');
+// var sherpa = require('style-sherpa'); //Генератор стайлгайда
+
+// sherpa('./src/styleguide/index.md', {
+//   output: './build/styleguide.html',
+//   template: './template.hbs'
+// }, cb());
 
 // Перечисление и настройки плагинов postCSS, которыми обрабатываются стилевые файлы
 let postCssPlugins = [

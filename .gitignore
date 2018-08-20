@@ -1,17 +1,32 @@
+.DS_Store
+node_modules/
 build/*
 !build/readme.md
+dist/
 design/
 src/blocks/sprite-svg/img/sprite-svg.svg
 src/blocks/sprite-png/img
 src/blocks/sprite-png/sprite-png.scss
 
-.Saved/
-_arc/
-bower_components/
-node_modules/
-.vscode/
-*.code-workspace
-.DS_Store
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Misc
 *.log
 *.sublime-*
 *.rar
@@ -22,3 +37,5 @@ node_modules/
 ex_files
 Thumbs.db
 __MACOSX/
+.Saved/
+_arc/
