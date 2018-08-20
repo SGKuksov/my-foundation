@@ -1,0 +1,8 @@
+<svg  width="16"
+      height="9"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<path fill="#000"
+      transform="translate(-2 -5)"
+      d="M3 5h9.556a1 1 0 0 1 1 1v6.889a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm12.333 2.688l1.816-1.793a.5.5 0 0 1 .851.356v6.477a.5.5 0 0 1-.857.35l-1.777-1.81-.033-3.58zM4.5 11a.5.5 0 1 0 0 1h4a.5.5 0 1 0 0-1h-4z"/>
+</svg>

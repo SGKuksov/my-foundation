@@ -1,0 +1,8 @@
+<svg  width="14"
+      height="8"
+      xmlns="http://www.w3.org/2000/svg">
+
+<path class="arrow-icon"
+      fill="#D8D8D8"
+      d="M6.683 5.269l4.95-4.95a1 1 0 0 1 1.415 1.414L7.39 7.389a1 1 0 0 1-1.441-.025L.293 1.707A1 1 0 1 1 1.707.293l4.976 4.976z" />
+</svg>

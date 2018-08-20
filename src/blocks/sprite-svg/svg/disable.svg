@@ -1,0 +1,8 @@
+<svg  width="16"
+      height="16"
+      xmlns="http://www.w3.org/2000/svg"        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<path fill="#979797"
+      d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm0 2A8 8 0 1 1 8 0a8 8 0 0 1 0 16zm4.607-14l1.414 1.414L3.414 14.021 2 12.607 12.607 2z"
+      />
+</svg>

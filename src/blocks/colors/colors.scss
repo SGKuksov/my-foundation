@@ -1,0 +1,64 @@
+// Colors
+$f-white:     #ffffff !default;
+$f-black:     #000000 !default;
+$f-red:       #f76561 !default;
+$f-orange:    #f9b639 !default;
+$f-yellow:    #ffeb2e !default;
+$f-green:     #79c547 !default;
+$f-cyan:      #1ad6e6 !default;
+$f-blue:      #1415df !default;
+$f-violet:    #7b0dd2 !default;
+$f-pink:      #c81d99 !default;
+$f-gray:      #dadada !default;
+$f-dark-gray: #4a4a4a !default;
+
+// Staff colors
+$disabled-btn: #dadada;
+
+$func-colors: () !default;
+$func-colors: map-merge(
+  (
+    "white":      $f-white,
+    "black":      $f-black,
+    "red":        $f-red,
+    "orange":     $f-orange,
+    "yellow":     $f-yellow,
+    "green":      $f-green,
+    "cyan":       $f-cyan,
+    "blue":       $f-blue,
+    "violet":     $f-violet,
+    "pink":       $f-pink,
+    "gray":       $f-gray,
+    "dark-gray":  $f-dark-gray
+  ),
+  $func-colors
+);
+
+.palette__title {
+  letter-spacing: 0.2px;
+  color: #2f3648;
+  margin-top: 100px;
+}
+
+.palette {
+  font-size: 0;
+
+  margin-bottom: 100px;
+
+  &__item {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+
+    @each $color, $value in $func-colors {
+      &--#{$color} {
+        background-color: #{$value};
+      }
+    }
+
+    &--white {
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+}

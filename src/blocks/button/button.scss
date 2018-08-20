@@ -1,0 +1,150 @@
+.buttons {
+  margin-bottom: 100px;
+
+  &__title {
+    letter-spacing: 0.2px;
+    color: #2f3648;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #4a4a4a;
+  }
+
+  &__desc {
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    color: #4a4a4a;
+  }
+}
+
+.btn {
+  position: relative;
+  width: 260px;
+  height: 50px;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  &.small {
+    width: 160px;
+    height: 40px;
+  }
+
+  &[disabled] {
+    background-color: $f-gray;
+    border-color: $f-gray;
+    opacity: 1;
+
+    &:hover {
+      background-color: $f-gray;
+      border-color: $f-gray;
+      opacity: 1;
+    }
+  }
+
+  &[disabled].hollow {
+    border-color: $f-gray;
+    color: $f-gray;
+    opacity: 1;
+
+    &:hover {
+      border-color: $f-gray;
+      color: $f-gray;
+      opacity: 1;
+    }
+  }
+
+  &--with-icon {
+
+    span {
+      margin-left: 20px;
+    }
+
+    .btn__icon {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      vertical-align: middle;
+      fill: currentColor;
+    }
+  }
+
+  &--with-icon.hollow {
+
+    span {
+      margin-left: 20px;
+    }
+
+    .btn__icon {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      vertical-align: middle;
+      fill: currentColor;
+    }
+  }
+
+  &--with-icon.small {
+
+    span {
+      margin-left: 10px;
+    }
+
+    .btn__icon {
+      position: absolute;
+      vertical-align: middle;
+      fill: currentColor;
+      left: 10px;
+      top: 15px;
+    }
+  }
+
+  &--round {
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &--round.small {
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &--with-icon.btn--round {
+
+    span {
+      margin-left: 40px;
+    }
+
+    .btn__icon {
+      position: absolute;
+      left: 30px;
+      top: 20px;
+      vertical-align: middle;
+      fill: currentColor;
+      margin-right: 20px;
+    }
+  }
+
+  &--with-icon.btn--round.small {
+
+    span {
+      margin-left: 30px;
+    }
+
+    .btn__icon {
+      position: absolute;
+      left: 20px;
+      top: 15px;
+      vertical-align: middle;
+      fill: currentColor;
+    }
+  }
+}
+
+
+
+
