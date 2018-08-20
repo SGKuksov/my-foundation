@@ -1,0 +1,133 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding-top: 44px;
+  padding-bottom: 45px;
+
+  @media (min-width: $screen-md) {
+    justify-content: center;
+    min-height: 250px;
+    padding-top: 36px;
+    padding-bottom: 29px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-bottom: 36px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: $screen-md) {
+      width: 994px;
+      flex-direction: row;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1260px;
+    }
+  }
+
+  &__leftcol {
+    align-self: center;
+    margin-bottom: 28px;
+
+    @media (min-width: $screen-md) {
+      flex: 1;
+      margin-bottom: 0;
+      align-self: flex-start;
+    }
+
+    @media (min-width: $screen-lg) {
+      flex: 1;
+    }
+  }
+
+  &__logo {
+    width: 110px;
+    height: 23px;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      width: 150px;
+      height: 31px;
+    }
+  }
+
+  &__logo-img {
+    object-fit: cover;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: $screen-sm) {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    @media (min-width: $screen-md) {
+      flex: 2;
+    }
+
+    @media (min-width: $screen-lg) {
+      flex: 1;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    @media (min-width: $screen-sm) {
+      padding: 10px;
+    }
+    @media (min-width: $screen-md) {
+      flex: 1;
+      padding: 0;
+    }
+  }
+
+  &__nav-item {
+    line-height: 2rem;
+  }
+
+  &__nav-link {
+  }
+
+  &__copy {
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 37px;
+
+    @media (min-width: $screen-md) {
+      align-items: flex-end;
+      margin-top: 85px;
+    }
+
+  }
+
+  &__copy-text {
+
+    & br {
+      @media (min-width: $screen-sm) {
+        display: none;
+      }
+    }
+  }
+}

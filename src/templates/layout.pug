@@ -1,0 +1,78 @@
+include ../mixins.pug
+
+doctype html
+html(class="no-js  page", lang="ru")
+
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no, maximum-scale=1")
+    meta(name="robots" content="noindex, nofollow")
+
+    block meta
+      title Home
+
+    block head
+      //- link(rel="stylesheet", href="css/style.min.css")
+      link(rel="stylesheet", href="css/style.css")
+      link(rel="shortcut icon", href="/img/favicon.ico", type="image/x-icon")
+      script.
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+  body
+    block page-header
+      +page-header()
+
+    .page-container
+      aside.sidebar.pushy.pushy-left
+
+        block side-nav
+          +side-nav(is_index)
+
+        +collections()
+        block extra-blocks
+
+      main.main
+        .site-overlay
+        .overlay
+        .main__container#container
+          //- контент
+          block bread
+          block top-panel
+            +top-panel()
+          block top-panel-edit
+
+          block filter
+            +filter()
+          block main-content
+          +about()
+
+    +page-footer()
+
+    block modal
+      //- модальные окна
+      //- +modal-select()
+      +modal-location()
+      +coupon-modal()
+      +rating-modal()
+      +review-modal()
+
+      //- только для страницы купона
+      +error-modal()
+
+    block page-bottom
+      script(src="js/jquery.min.js")
+      //- script(src="js/jquery-migrate.min.js")
+      //- script(src="js/jquery-ui.min.js")
+      script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+      script(src="js/svg4everybody.min.js")
+      script(src="js/ofi.min.js")
+      script(src="js/pushy.min.js")
+      script(src="js/slick.min.js")
+      script(src="js/truncate.js")
+      script(src="js/auto-search.js")
+      script(src="js/jquery.barrating.min.js")
+      script(src="js/bootstrap.bundle.min.js")
+      script(src="js/jquery-ias.min.js")
+      script(src="js/script.js")
+      script(src="js/map.js")
+      //- script(src="js/script.min.js")

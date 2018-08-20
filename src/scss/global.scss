@@ -1,0 +1,375 @@
+// pushy
+html, body{
+  overflow-x: hidden;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+*,
+*:after,
+*:before {
+  outline: none;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: $light-gray;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+
+  &.bg-grey {
+    background-image: url(../img/back_grey.jpg);
+
+    .bread a,
+    .bread span {
+      color: #ffffff;
+    }
+    .filter__desc {
+      color: #ffffff;
+    }
+    .filter-near__title {
+      color: #ffffff;
+    }
+    .filter__search_by_place {
+      fill: #ffffff;
+      stroke: #ffffff;
+      margin-left: 10px;
+    }
+    .filter__btn {
+      background-color: rgba($color: #ffffff, $alpha: 0.5);
+      border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+      color: rgba($color: #ffffff, $alpha: 0.5);
+
+      svg {
+        fill: rgba($color: #ffffff, $alpha: 0.5);
+      }
+
+      &.active {
+        background-color: rgba($color: #ffffff, $alpha: 1);
+        border: 1px solid rgba($color: #ffffff, $alpha: 1);
+        color: #5b5a5a;
+
+        svg {
+          fill: #5b5a5a;
+        }
+      }
+    }
+    .filter__select {
+      border: 1px solid #000;
+    }
+  }
+  &.bg-orange-1 {
+    background-image: url(../img/back_orange_1.jpg);
+
+    .bread a,
+    .bread span {
+      color: #5b5a5a;
+    }
+    .filter__desc {
+      color: #5b5a5a;
+    }
+    .filter-near__title {
+      color: #5b5a5a;
+    }
+    .filter__search_by_place {
+      fill: #323232;
+      stroke: #323232;
+      margin-left: 10px;
+    }
+    .filter__btn {
+      background-color: rgba($color: #ffffff, $alpha: 0.5);
+      border: 1px solid rgba($color: #000000, $alpha: 0.5);
+      color: rgba($color: #000000, $alpha: 0.5);
+
+      svg {
+        fill: rgba($color: #000000, $alpha: 0.5);
+      }
+
+      &.active {
+        background-color: rgba($color: #ffffff, $alpha: 1);
+        border: 1px solid rgba($color: #000000, $alpha: 1);
+        color: #5b5a5a;
+
+        svg {
+          fill: #5b5a5a;
+        }
+      }
+    }
+    .filter__select {
+      border: 1px solid #000;
+    }
+  }
+  &.bg-orange-2 {
+    background-image: url(../img/back_orange_2.jpg);
+
+    .bread a,
+    .bread span {
+      color: #5b5a5a;
+    }
+    .filter__desc {
+      color: #5b5a5a;
+    }
+    .filter-near__title {
+      color: #5b5a5a;
+    }
+    .filter__search_by_place {
+      fill: #323232;
+      stroke: #323232;
+      margin-left: 10px;
+    }
+    .filter__btn {
+      background-color: rgba($color: #ffffff, $alpha: 0.5);
+      border: 1px solid rgba($color: #000000, $alpha: 0.5);
+      color: rgba($color: #000000, $alpha: 0.5);
+
+      svg {
+        fill: rgba($color: #000000, $alpha: 0.5);
+      }
+
+      &.active {
+        background-color: rgba($color: #ffffff, $alpha: 1);
+        border: 1px solid rgba($color: #000000, $alpha: 1);
+        color: #5b5a5a;
+
+        svg {
+          fill: #5b5a5a;
+        }
+      }
+    }
+    .filter__select {
+      border: 1px solid #000;
+    }
+  }
+  &.bg-red-1 {
+    background-image: url(../img/back_red_1.jpg);
+
+    .bread a,
+    .bread span {
+      color: #ffffff;
+    }
+    .filter__desc {
+      color: #ffffff;
+    }
+    .filter-near__title {
+      color: #ffffff;
+    }
+    .filter__search_by_place {
+      fill: #ffffff;
+      stroke: #ffffff;
+      margin-left: 10px;
+    }
+    .filter__btn {
+      background-color: rgba($color: #ffffff, $alpha: 0.5);
+      border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+      color: rgba($color: #ffffff, $alpha: 0.5);
+
+      svg {
+        fill: rgba($color: #ffffff, $alpha: 0.5);
+      }
+
+      &.active {
+        background-color: rgba($color: #ffffff, $alpha: 1);
+        border: 1px solid rgba($color: #ffffff, $alpha: 1);
+        color: #5b5a5a;
+
+        svg {
+          fill: #5b5a5a;
+        }
+      }
+    }
+    .filter__select {
+      border: 1px solid #000;
+    }
+  }
+  &.bg-red-2 {
+    background-image: url(../img/back_red_2.jpg);
+
+    .bread a,
+    .bread span {
+      color: #5b5a5a;
+    }
+    .filter__desc {
+      color: #5b5a5a;
+    }
+    .filter-near__title {
+      color: #5b5a5a;
+    }
+    .filter__search_by_place {
+      fill: #323232;
+      stroke: #323232;
+      margin-left: 10px;
+      margin-left: 10px;
+    }
+    .filter__btn {
+      background-color: rgba($color: #ffffff, $alpha: 0.5);
+      border: 1px solid rgba($color: #000000, $alpha: 0.5);
+      color: rgba($color: #000000, $alpha: 0.5);
+
+      svg {
+        fill: rgba($color: #000000, $alpha: 0.5);
+      }
+
+      &.active {
+        background-color: rgba($color: #ffffff, $alpha: 1);
+        border: 1px solid rgba($color: #000000, $alpha: 1);
+        color: #5b5a5a;
+
+        svg {
+          fill: #5b5a5a;
+        }
+      }
+    }
+    .filter__select {
+      border: 1px solid #000;
+    }
+  }
+  &.bg-red-3 {
+    background-image: url(../img/back_red_3.jpg);
+
+    .bread a,
+    .bread span {
+      color: #ffffff;
+    }
+    .filter__desc {
+      color: #ffffff;
+    }
+    .filter-near__title {
+      color: #ffffff;
+    }
+    .filter__search_by_place {
+      fill: #ffffff;
+      stroke: #ffffff;
+      margin-left: 10px;
+    }
+    .filter__btn {
+      background-color: rgba($color: #ffffff, $alpha: 0.5);
+      border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+      color: rgba($color: #ffffff, $alpha: 0.5);
+
+      svg {
+        fill: rgba($color: #ffffff, $alpha: 0.5);
+      }
+
+      &.active {
+        background-color: rgba($color: #ffffff, $alpha: 1);
+        border: 1px solid rgba($color: #ffffff, $alpha: 1);
+        color: #5b5a5a;
+
+        svg {
+          fill: #5b5a5a;
+        }
+      }
+    }
+    .filter__select {
+      border: 1px solid #000;
+    }
+  }
+  &.bg-yellow {
+    background-image: url(../img/back_yellow.jpg);
+
+    .bread a,
+    .bread span {
+      color: #5b5a5a;
+    }
+    .filter__desc {
+      color: #5b5a5a;
+    }
+    .filter-near__title {
+      color: #5b5a5a;
+    }
+    .filter__search_by_place {
+      fill: #323232;
+      stroke: #323232;
+      margin-left: 10px;
+    }
+    .filter__btn {
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      border: 1px solid rgba($color: #000000, $alpha: 0.5);
+      color: rgba($color: #000000, $alpha: 0.5);
+
+      svg {
+        fill: rgba($color: #000000, $alpha: 0.5);
+      }
+
+      &.active {
+        background-color: rgba($color: #000000, $alpha: 1);
+        border: 1px solid rgba($color: #000000, $alpha: 1);
+        color: #5b5a5a;
+
+        svg {
+          fill: #5b5a5a;
+        }
+      }
+    }
+    .filter__select {
+      border: 1px solid #000;
+    }
+  }
+}
+.banner {
+  background-image: url(../img/adv_header.jpg);
+  min-height: 45px;
+  width: 100%;
+  text-align: center;
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 23px;
+    color: #ffffff;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $light-gray;
+  font-weight: normal;
+
+  &:hover {
+    text-decoration: none;
+    color: $light-gray;
+    font-weight: normal;
+  }
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+  font-weight: normal;
+}
+
+select {
+  width: auto !important;
+}
+
+img {
+  width: 100%; /* Ширина изображений */
+  height: 100%; /* Высота изображении */
+  object-fit: cover; /* Вписываем фотографию в область */
+}
+
+button {
+  border: none
+}
+
+.error {
+  color: #ff0000;
+  line-height: 20px;
+}
