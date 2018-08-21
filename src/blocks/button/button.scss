@@ -16,6 +16,10 @@
     font-weight: 400;
     letter-spacing: 0.1px;
     color: #4a4a4a;
+
+    &--hide {
+      opacity: 0;
+    }
   }
 }
 
@@ -47,12 +51,17 @@
   &[disabled].hollow {
     border-color: $f-gray;
     color: $f-gray;
-    opacity: 1;
 
     &:hover {
       border-color: $f-gray;
       color: $f-gray;
-      opacity: 1;
+    }
+  }
+  &[disabled].clear {
+    color: $f-gray;
+
+    &:hover {
+      color: $f-gray;
     }
   }
 
@@ -101,19 +110,24 @@
     }
   }
 
-  &--round {
+  &.rounded {
     border-radius: 50px;
     padding-left: 30px;
     padding-right: 30px;
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 5px 2px rgb(59, 153, 252);
+    }
   }
 
-  &--round.small {
+  &.rounded.small {
     border-radius: 40px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  &--with-icon.btn--round {
+  &--with-icon.rounded {
 
     span {
       margin-left: 40px;
@@ -129,7 +143,7 @@
     }
   }
 
-  &--with-icon.btn--round.small {
+  &--with-icon.rounded.small {
 
     span {
       margin-left: 30px;
@@ -143,7 +157,55 @@
       fill: currentColor;
     }
   }
+
+  &.clear {
+    box-shadow: none;
+    width: auto;
+    height: 36px;
+    padding-left: 0;
+  }
+
+  &--with-icon.clear {
+
+    span {
+      margin-left: 0;
+    }
+
+    .btn__icon {
+      position: relative;
+      top: -1px;
+      vertical-align: middle;
+      fill: currentColor;
+    }
+  }
+
+  &--icon {
+    width: 50px;
+    height: 50px;
+
+    .btn__icon {
+      vertical-align: middle;
+      fill: currentColor;
+    }
+  }
+  &--icon.small {
+    width: 40px;
+    height: 40px;
+
+    .btn__icon {
+      vertical-align: middle;
+      fill: currentColor;
+    }
+  }
+
+  &--icon.rounded {
+    padding: 0;
+  }
+  &--icon.small.rounded {
+    padding: 0;
+  }
 }
+
 
 
 
