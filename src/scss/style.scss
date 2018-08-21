@@ -6,12 +6,12 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-// @include foundation-grid;
-// @include foundation-flex-grid;
-@include foundation-xy-grid-classes;
-@include foundation-typography;
-@include foundation-button;
-@include foundation-forms;
+// @include foundation-grid; // Подключение стилей сеток
+// @include foundation-flex-grid; // Подключение стилей сеток
+@include foundation-xy-grid-classes; // Подключение стилей сеток
+@include foundation-typography; // Стили типографики
+@include foundation-button; // Стили кнопок
+@include foundation-forms; // Стили форм
 // @include foundation-range-input;
 @include foundation-accordion;
 @include foundation-accordion-menu;
@@ -66,4 +66,4 @@
 @import 'src/blocks/page-footer/page-footer';
 @import 'src/blocks/colors/colors';
 @import 'src/blocks/button/button';
-@import 'src/blocks/links/links';
+@import 'src/blocks/grid/grid';
